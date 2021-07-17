@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Student Data</h2>
+
+<script src="~/Content/Pages/jquery-3.5.1.min.js"></script>
+<script src="~/Content/Pages/StudentEdit.js"></script>
+<input type="hidden" id="hdnId" value="@ViewBag.Id" />
+<input type="hidden" id="hdnParentId" value="0" />
+<div class="col-md-6">
+    <div class="form-group">
+        <label>StudentId</label>
+        <input type="text" id="hdnId" name="Id" class="form-control " readonly />
+    </div>
+    <div class="form-group">
+        <label>StudentName</label>
+        <input type="text" id="txtStudentName" name="StudentName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>ParentName</label>
+        <input type="text" id="txtParentName" name="ParentName" class="form-control"  disabled/>
+    </div>
+    <div class="form-group">
+        <label>Student Class</label>
+        <select id="ddlClass" class="form-control">
+            <option value="1">KG1</option>
+            <option value="2">KG2</option>
+
+        </select>
+    </div>
+</div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label>Parent Email</label>
+            <input type="text" id="txtParentEmail" name="ParentEmail" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Parent Mobile</label>
+            <input type="text" id="txtParentPhone" name="ParentMobile" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Student Status</label>
+            <select id="ddlActive" class="form-control">
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+
+            </select>
+            
+        </div>
+        <div class="col-md-12 mt-4">
+            <button id="btnSave" value="submit" onclick=saveUser()>SAVE</button>
+
+        </div>
+    </div>

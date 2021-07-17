@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>User Registration Form </h2>
+<script src="~/Content/Pages/jquery-3.5.1.min.js"></script>
+<script src="~/Content/Pages/User.js"></script>
+
+<div class="col-md-12">
+
+    <div class="col-md-6">
+        <div class="form-group">
+            <input id="Id"  type="text" name="UserId" class="form-control " readonly />
+        </div>
+        <div class="form-group">
+            <input id="txtFirstName" type="text" placeholder="Enter First Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input id="txtLastName" type="text" placeholder="Enter Last Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Select User Type</label>
+            <select id="ddlUserType">
+                <option>Student</option>
+                <option>Parent</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <input id="txtEmail" type="text" placeholder="Enter Email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input id="txtPhone" type="text" placeholder="Enter Phone" class="form-control" />
+        </div>
+        <div class="form-group" >
+            <label>Select Active Status of student</label>
+            <select id="ddlActive">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button id="btnSave" value="submit" onclick=saveUser()>SAVE</button>
+        </div>
+    </div>
+
+</div>
+

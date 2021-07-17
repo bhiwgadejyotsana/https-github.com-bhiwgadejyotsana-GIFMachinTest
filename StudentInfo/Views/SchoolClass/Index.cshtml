@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Class Form</h2>
+
+<script src="~/Content/Pages/jquery-3.5.1.min.js"></script>
+<script src="~/Content/Pages/SchoolClass.js"></script>
+
+
+<div class="col-md-12">
+    <div class="form-group">
+        <input id="Id" type="text" name="ClassId" class="form-control " readonly />
+    </div>
+    <div class="form-group">
+        <input id="txtName" type="text" placeholder="Enter Class Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <button id="btnSave" value="submit" onclick=saveClass()>SAVE</button>
+    </div>
+</div>

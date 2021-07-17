@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "StudentList";
+}
+
+<h2>List of Students</h2>
+<script src="~/Content/Pages/jquery-3.5.1.min.js"></script>
+<script src="~/Content/Pages/User.js"></script>
+<script src="~/Content/Pages/StudentEdit.js"></script>
+<div class="col-sm-12" style="margin-left: -50px;">
+    <table id="tblUser" border=" 1" class="table table-striped table-bordered table-hover table-condensed">
+        <thead>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Parent Name</th>
+        <th>Student Class</th>
+        <th>Parent Email</th>
+        <th>Parent Mobile No.</th>
+        <th>Active Status</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+   
+    <button id="btnUpdate" value="submit" onclick=updateStudentStatus()>Update</button>
+</div>
